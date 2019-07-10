@@ -1,0 +1,26 @@
+.Prispevok {
+    background-color: #F0FFFF;
+}
+#CreatePost {
+    background-color: #90EE90;
+}
+.Links{
+    background-color: #FFF5EE;
+}
+hr {
+    Border: black solid;
+}
+#aboutMe {
+    background-color: #F5DEB3;
+    text-align: center;
+
+}
+#links {
+    background-color: #F5DEB3;
+    text-align: center;
+
+}
+.Me {
+    background-color: #FFF5EE;
+
+}
