@@ -2,17 +2,18 @@ body {
   margin: 0;
   padding: 0;
   color: black;
-  background: #FFF5EE;
+  background: #fff5ee;
   font-family: Verdana, sans-serif;
 }
 
-h2, h3 {
+h2,
+h3 {
   margin-top: 0;
 }
 
 /* main layout */
 header {
-  background:#90EE90;
+  background: #90ee90;
   height: 5rem;
   position: fixed;
   top: 0;
@@ -21,8 +22,7 @@ header {
   display: flex;
   color: black;
   align-items: center;
-
-} 
+}
 
 header .logo {
   width: 8rem;
@@ -56,6 +56,7 @@ nav ul {
   margin: 0;
   flex-direction: row;
 }
+
 nav ul li {
   padding: 0 1.5rem;
   align-items: center;
@@ -65,37 +66,25 @@ nav ul li {
 }
 
 nav ul li.active {
-  background: rgba(255,255,255, 0.4);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 nav ul li:hover {
-  background: rgba(255,255,255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 nav ul li a {
   text-decoration: none;
   color: white;
 }
- 
-/* Side bar*/
-/*.sidebar {
+
+/* Side bar Links*/
+
+.sidebar {
   margin: 1rem;
   padding: 1rem;
-  min-width:15rem;
   background: white;
-}*/
-.sidebar {
-  
-
-}
-
-aside {
-  margin:1rem;
-  padding: 1rem;
-  background: white;
-  min-width:15rem;  
-  
-
+  min-width: 15rem;
 }
 
 .links {
@@ -103,7 +92,7 @@ aside {
 }
 
 aside ul {
-  display:flex;
+  display: flex;
   list-style: none;
   /*padding-top: 0;*/
   align-items: stretch;
@@ -111,7 +100,7 @@ aside ul {
   margin: 0;
   flex-direction: column;
   padding-inline-start: 20px;
-  padding-inline-end: 20px;  
+  padding-inline-end: 20px;
 }
 
 aside ul li {
@@ -122,28 +111,29 @@ aside ul li {
   justify-content: center;
   border: green solid;
   border-width: 10px;
-  background-color: #E0FFFF;  
+  background-color: #e0ffff;
 }
 
 aside ul li.active {
-  background: rgba(255,255,255, 0.4);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 aside ul li:hover {
-  background: rgba(255,255,255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 aside ul li a {
   text-decoration: none;
   color: black;
 }
+
+/* Side bar Friends */
+
 .friends {
-  padding:1rem;
+  padding: 1rem;
   margin: 1rem;
   min-width: 15rem;
   background: white;
-  
-  
 }
 
 .signFriends {
@@ -176,7 +166,6 @@ aside ul li a {
 .friends ul {
   list-style: none;
   padding-left: 0;
-  
 }
 
 .friends ul li {
@@ -194,13 +183,10 @@ aside ul li a {
   align-items: center;
 }
 
-
-
 main {
   margin-top: 5rem;
   display: flex;
   flex-direction: row;
-  
 }
 
 /*post adding*/
@@ -209,17 +195,19 @@ main {
   background: white;
   padding: 1rem;
   margin: 1rem;
-  
 }
 
 .addpost .field {
   margin-bottom: 0.8rem;
 }
 
-.addpost .field input, .addpost .field textarea {
-  display:inline-block;
-  width: 80%;
+.addpost .field input,
+.addpost .field textarea {
+  display: inline-block;
+  width: 90%;
 }
+
+/*prispevky*/
 
 .avatar-name {
   display: flex;
@@ -228,43 +216,42 @@ main {
   padding: 1rem;
 }
 
-/*prispevky*/
-
-button.like{
-	width: 30px;
-	height: 30px;
-	margin: 0 auto;
-	line-heigth: 50px;
-	border-radius: 50%;
-	color: rgba(0,150,136 ,1);
-	background-color:rgba(38,166,154 ,0.3);
-	border-color: rgba(0,150,136 ,1);
-	border-width: 1px;
-	font-size: 15px;
+button.like {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  line-heigth: 50px;
+  border-radius: 50%;
+  color: rgba(0, 150, 136, 1);
+  background-color: rgba(38, 166, 154, 0.3);
+  border-color: rgba(0, 150, 136, 1);
+  border-width: 1px;
+  font-size: 15px;
 }
 
-button.dislike{
-	width: 30px;
-	height: 30px;
-	margin: 0 auto;
-	line-heigth: 50px;
-	border-radius: 50%;
-	color: rgba(255,82,82 ,1);
-	background-color: rgba(255,138,128 ,0.3);
-	border-color: rgba(255,82,82 ,1);
-	border-width: 1px;
-	font-size: 15px;
+button.dislike {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  line-heigth: 50px;
+  border-radius: 50%;
+  color: rgba(255, 82, 82, 1);
+  background-color: rgba(255, 138, 128, 0.3);
+  border-color: rgba(255, 82, 82, 1);
+  border-width: 1px;
+  font-size: 15px;
 }
-
 
 .card-text {
   text-align: justify;
 }
+
 .timeline {
   flex-grow: 1;
-
 }
+
 /* z-index aby bolo vzadu za nav barom */
+
 .card {
   z-index: -1;
   margin: 1rem;
@@ -275,12 +262,15 @@ button.dislike{
   z-index: -1;
 }
 
+.card-footertext-muted {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
 /*footer*/
+
 footer {
-  background: #F5F5F5;
+  background: #f5f5f5;
   text-align: center;
   padding: 2rem 1rem 1rem 1rem;
 }
-
-
-

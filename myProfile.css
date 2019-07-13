@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  background: #fff5ee;
+  font-family: Verdana, sans-serif;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+/* main layout */
+header {
+  background: #90ee90;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  color: black;
+  align-items: center;
+}
+
+header .logo {
+  width: 8rem;
+  height: 5rem;
+  margin: 1rem 3rem 1rem 1rem;
+}
+
+.search {
+  flex-grow: 1;
+  align-items: stretch;
+}
+
+.search input {
+  width: 80%;
+}
+
+nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-self: stretch;
+  padding-right: 2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  align-items: stretch;
+  font-size: 1.2rem;
+  margin: 0;
+  flex-direction: row;
+}
+
+nav ul li {
+  padding: 0 1.5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav ul li.active {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+nav ul li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* main */
+
+main {
+  margin: 6rem 1rem 1rem 1rem;
+  background: white;
+}
+
+/* .field {
+     margin-bottom: 0.8rem;
+     display: flex;
+     flex-direction: row;
+     align-content: center;
+ }
+
+ .field input {
+     margin-left: 1rem;
+ } */
+
+td input {
+  margin-left: 1rem;
+  margin-bottom: 0.3rem;
+  padding-left: 1rem;
+  display: inline-block;
+  width: 100%;
+}
+
+.Profile {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  align-content: center;
+  margin: 6rem 1rem 1rem 1rem;
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.photo {
+  width: 200px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.myInfo {
+  padding-left: 2rem;
+  flex-grow: 1;
+}
+
+.card-text {
+  text-align: justify;
+}
+
+/*footer*/
+
+footer {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+}
