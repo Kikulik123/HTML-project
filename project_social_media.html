@@ -2,106 +2,330 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Hello ladies</title>
-        <link rel="stylesheet" href="project social media.css" type="text/css"/>
-
+        <title>Fakebook</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="project_social_media.css" type="text/css"/>
+        <meta name="viewport" content="width-device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+                crossorigin="anonymous"></script>
     </head>
+
     <body>
-<header>
-
-</header>
-<nav>
-
-
-</nav>
-<main>
-    <aside class="Links">
-        <h2 id="links">Links</h2>
-            <ul>
-                    <b><li>Chrome: </b><a href="https://www.google.com/chrome/">https://www.google.com/chrome/</a></li>
-                    <b><li>Firefox: </b><a href="https://www.mozilla.org/en-US/firefox/new/">https://www.mozilla.org/en-US/firefox/new/</a></li>
-                    <b><li>Safari: </b><a href="https://www.apple.com/lae/safari/">https://www.apple.com/lae/safari/</a></li>
+        <header>
+            <img class="logo" src="logo.svg" alt="Hen Party Logo" />
+            <div class="search"><input type="text" placeholder="Search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                </input> 
+            </div>
+            <nav>                   
+                    <ul>                       
+                        <li class="active"><a href="project_social_media.html">Timeline</a></li>
+                        <li><a href="#">Other</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="myProfile.html">Kikulik Tran's Profile</a></li>
                     </ul>
+            </nav>
+        </header>
 
-    </aside>
-<div class="Prispevok">
-    <h3 id="CreatePost">Create Post</h3>
-    <textarea></textarea><br/>
-    <button type="submit" value="true" name="buttonSubmit">
-        <span>Choose file</span>
-    </button> 
-    <input type="submit" value="Submit"></input>
-    <hr/>
-</div>
-<article class="Me">
-    <h2 id="aboutMe">Something about me</h2>
-    <p>
-    <input type="image" src="http://lorempixel.com/200/200/people/" alt="picture of person"> <strong>Kikulik Tran</strong>
-    </p>
-    <p>
-        Muffin lemon drops sweet marzipan. Tart chocolate cake cake sweet. Ice cream muffin liquorice bonbon. 
-        Pie liquorice oat cake carrot cake oat cake bear claw. Sweet toffee dragée dragée jelly marzipan tootsie roll. 
-        Caramels sweet topping soufflé macaroon brownie.
-    </p>
-</input>
+            <main>
+                <div class="sidebar">
+                    <aside> 
+                        <h2 class="links">Links</h2>                
+                        <ul>
+                            <li><a href="https://globfone.com/send-text/">Messages</a></li>
+                            <li><a href="https://www.youtube.com/channel/UC_zEzzq54Rm0iy7lmmZbCIg">Watch</a></li>
+                            <li><a href="https://www.amazon.com/">MarketPlace</a></li>
+                            <li><a href="https://www.agame.com/games?">Play games</a></li>
 
-</article>
+                        </ul>
+                        </hr>
+                    </aside>
+                </div>
 
-<article>
-<div>
-    <input type="image" src="http://lorempixel.com/400/200/city/" alt="town picture"  
-    id="image" name="image">
-    </input>
-    <br/>
+                <section class="Timeline">
+                      
+                        <div class="addpost">
+                            <h3>Create Post</h3>
+                            <div class="field">
+                                <input class="clear" type="text" placeholder="Username" name="username"></input>
+                            </div>
+                            <div class="field">
+                                <input class="clear" type="text" placeholder="Title" name="title"/>
+                            </div>
+                            <div class="field">
+                              <textarea class="clear" rows="5" cols="50" placeholder="Description" name="description"></textarea>
+                            </div>
+                            <div class="button">
+                                
+                                <input type="file" name="myFile"/>
+                                <input type="reset" value="Cancel" onClick="$('.clear').val('')"/>
+                                <input type="submit" value="Submit"/>
+                            </div>
+                            
+                        </div>
 
-</div>
-</article>
+                        <div class="timeline-content">
+                            <article>
+                                <div class="card">
+                                    <div class="avatar-name">
+                                        <img class="avatar" alt="Spencer Reeds avatar" src="http://lorempixel.com/100/100/people/1"/>
+                                        <h4 class="username">Spencer Reeds</h4>
+                                    </div>
+                                    <img class="card-img-top" src="http://lorempixel.com/250/150/cats/4">
+                                     <div class="card-body">
+                                    <h3 class="card-title">Biscuit <span class="badge badge-secondary"> New</span></h3>
+                                     <p class="card-text">Biscuit gingerbread chocolate cake gingerbread chocolate cake bear claw soufflé 
+                                         topping ice cream. Macaroon dessert halvah wafer cupcake cheesecake. Lemon drops chocolate tootsie 
+                                         roll carrot cake fruitcake halvah. Toffee cotton candy candy chupa chups candy canes lemon drops pie. 
+                                         Chocolate cake soufflé icing gummies liquorice tootsie roll. Dragée jelly beans sugar plum. Chocolate 
+                                         carrot cake muffin gummi bears jelly. Wafer sweet jelly beans jelly jelly wafer bear claw.</p>
+                                     
+                                    <button class="like">
+                                            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                    </button>
+                                        
+                                    <button class="dislike">
+                                            <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+                                    </button>
+                                
+                                </div>
+                                <div class="card-footertext-muted"><time>20:00 July 12, 2019</time></div>
+                                    
+                            </article>
 
-<p>This a simple page with different types of simple tags to try.</p>
-<h2>Used technologies</h2>
-<h3>Browsers</h3>
-<ol>
-    <b><li>Chrome: </b><a href="https://www.google.com/chrome/">https://www.google.com/chrome/</a></li>
-    <b><li>Firefox: </b><a href="https://www.mozilla.org/en-US/firefox/new/">https://www.mozilla.org/en-US/firefox/new/</a></li>
-    <b><li>Safari: </b><a href="https://www.apple.com/lae/safari/">https://www.apple.com/lae/safari/</a></li>
-    </ol>
-<h3>Code</h3>
-<img
-src="https://www.w3.org/html/logo/downloads/HTML5_Logo_128.png"
-alt="html logo"
-/>
-<h2>Users</h2>
-<table>
-        <thead>
-                <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
-                <th>City</th>
-                </tr>
+                            <article>
+                                    <div class="card">
+                                        <div class="avatar-name">
+                                            <img class="avatar" alt="Tory Reeds avatar" src="http://lorempixel.com/100/100/people/3"/>
+                                            <h4 class="username">Tory Reeds</h4>
+                                        </div>
+                                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                  <div class="carousel-item active">
+                                                    <img src="http://lorempixel.com/600/400/nature/1" class="d-block w-100" alt="nature picture">
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                    <img src="http://lorempixel.com/600/400/nature/2" class="d-block w-100" alt="nature picture">
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                    <img src="http://lorempixel.com/600/400/nature/3" class="d-block w-100" alt="nature picture">
+                                                  </div>
+                                                </div>
+                                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                  <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                  <span class="sr-only">Next</span>
+                                                </a>
+                                        </div>
+                                         <div class="card-body">
+                                        <h3 class="card-title">Nature </h3>
+                                        <button class="like">
+                                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                        </button>
+                                            
+                                        <button class="dislike">
+                                                <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div class="card-footertext-muted"><time>19:41 June 12, 2019</time></div>
+                            </article>
 
-            </thead>
-            <tbody>
-                <tr>
-                        <td>John</td>
-                        <td>Smith</td>
-                        <td><a href="">john.smith@gmail.com</a></td>
-                        <td>New York</td>
-                </tr>
-                <tr>
-                        <td>Jane</td>
-                        <td>Doe</td>
-                        <td><a href="">jane.doe@gmail.com</a></td>
-                        <td>Paris</td>
-                </tr>
+                            <article>
+                                        <div class="card">
+                                            <div class="avatar-name">
+                                                <img class="avatar" alt="Cooper Selvich avatar" src="http://lorempixel.com/100/100/people/4"/>
+                                                <h4 class="username">Cooper Selvich</h4>
+                                            </div>
+                                            <div class="card-body">
+                                            <h3 class="card-title">Chocolate</h3>
+                                             <p class="card-text">Sweet roll tootsie roll halvah macaroon tootsie roll gummi bears cookie. 
+                                                 Brownie sweet roll muffin cake oat cake. Jelly-o pastry marshmallow sugar plum. Liquorice cake
+                                                  icing cupcake liquorice cupcake. Jelly-o lollipop ice cream bonbon chocolate cake cake apple pie 
+                                                  jujubes. Chocolate bar carrot cake sweet roll marshmallow jelly icing muffin cupcake. Dessert 
+                                                  chupa chups gummi bears toffee cake pastry.</p>
+                                            
+                                                    <button class="like">
+                                                            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                                    </button>
+                                                        
+                                                    <button class="dislike">
+                                                            <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+                                                    </button>
+                                        </div>
+                                        <div class="card-footertext-muted"><time>19:41 December 12, 2018</time></div>
+                            </article>
 
+                            <article>
+                                            <div class="card">
+                                                <div class="avatar-name">
+                                                    <img class="avatar" alt="Alice Drake avatar" src="http://lorempixel.com/100/100/people/6"/>
+                                                    <h4 class="username">Alice Drake</h4>
+                                                </div>
+                                                <img class="card-img-top" src="https://www.oceancoyacht.com/images/Amara_Evening-20.02.2017-13MB.jpg">
+                                                 <div class="card-body">
+                                                <h3 class="card-title">Yacht <span class="badge badge-secondary"> New</span></h3>
+                                                 <p class="card-text">Croissant jelly gummi bears dragée croissant liquorice powder powder. Candy 
+                                                     canes muffin cake gummies wafer bonbon chocolate halvah pudding. Soufflé sweet roll pie oat cake
+                                                      donut. Wafer liquorice tiramisu bonbon sesame snaps. Pastry dessert fruitcake ice cream pudding. 
+                                                      Chupa chups liquorice gummi bears bonbon powder oat cake brownie gingerbread. Chocolate cupcake 
+                                                      candy powder carrot cake. Croissant croissant jelly cookie cotton candy soufflé bonbon bonbon 
+                                                      gummies. Croissant soufflé halvah jelly beans.</p>
+                                                      <button class="like">
+                                                            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                                    </button>
+                                                        
+                                                    <button class="dislike">
+                                                            <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+                                                    </button>
+                                            
+                                            </div>
+                                            <div class="card-footertext-muted"><time>20:41 November 12, 2018</time></div>
+                            </article>
 
-            </tbody>
+                            <article>
+                                                <div class="card">
+                                                    <div class="avatar-name">
+                                                        <img class="avatar" alt="Leo Carl avatar" src="http://lorempixel.com/100/100/people/5"/>
+                                                        <h4 class="username">Leo Carl</h4>
+                                                    </div>
+                                                    <img class="card-img-top" src="https://media1.tenor.com/images/5d73ad5f76cb5d37b316efaa88e61f0a/tenor.gif?itemid=7358366">
+                                                         <div class="card-body">
+                                                        <h3 class="card-title">Doby </h3>
+                                                         <p class="card-text">Biscuit gingerbread chocolate cake gingerbread chocolate cake bear claw soufflé 
+                                                             topping ice cream. Macaroon dessert halvah wafer cupcake cheesecake. Lemon drops chocolate tootsie 
+                                                             roll carrot cake fruitcake halvah. Toffee cotton candy candy chupa chups candy canes lemon drops pie. 
+                                                             Chocolate cake soufflé icing gummies liquorice tootsie roll. Dragée jelly beans sugar plum. Chocolate 
+                                                             carrot cake muffin gummi bears jelly. Wafer sweet jelly beans jelly jelly wafer bear claw.</p>
+                                                             <button class="like">
+                                                                    <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                                            </button>
+                                                                
+                                                            <button class="dislike">
+                                                                    <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+                                                            </button>
+                                                </div>
+                                                <div class="card-footertext-muted"><time>19:41 July 12, 2018</time></div>
+                                </article>
 
+                                <article>
+                                                    <div class="card">
+                                                        <div class="avatar-name">
+                                                            <img class="avatar" alt="Owen Smith avatar" src="http://lorempixel.com/100/100/people/7"/>
+                                                            <h4 class="username">Owen Smith</h4>
+                                                        </div>
+                                                        
+                                                         <div class="card-body">
+                                                        <h3 class="card-title">Marzipan <span class="badge badge-secondary"> New</span></h3>
+                                                         <p class="card-text">Dragée chocolate cake fruitcake donut topping oat cake chupa 
+                                                             chups lollipop. Lemon drops wafer halvah chupa chups. Icing powder soufflé gingerbread. 
+                                                             Candy caramels cake donut candy jelly beans. Sweet roll donut jelly-o. Marshmallow 
+                                                             gingerbread croissant cheesecake. Liquorice marshmallow pastry biscuit marshmallow 
+                                                             icing. Chocolate bar marzipan marshmallow gummies sesame snaps cotton candy.</p>
+                                                             <button class="like">
+                                                                    <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                                            </button>
+                                                                
+                                                            <button class="dislike">
+                                                                    <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+                                                            </button>
+                                                    </div>
+                                                    <div class="card-footertext-muted"><time>19:41 December 12, 2019</time></div>
+                                </article>
 
-</table>
-</main>
+                        </div>
 
+                        <form class="important">
+                        <div class="alert alert-success" role="alert">
+                                <h4 class="alert-heading">Well done!</h4>
+                                <p>Aww yeah, you've successfully read all posts. Congratulations!</p>
+                                <hr>
+                        </div> 
+                        </form>       
+                </section>
 
+                <section class="friends">
+                        <h2 class="signFriends">Friends</h2>
+                        <ul>
+                                <li>
+                                    <div class="user-info">
+                                        <img class="avatar" alt="Spencer Reeds avatar" src="http://lorempixel.com/100/100/people/1" />
+                                        <span class="username">Spencer Reeds</span>
+                                    </div>
+                                    <div class="status online"></div>
+                                </li>
+                                <li>
+                                    <div class="user-info">
+                                        <img class="avatar" alt="Tony Reeds avatar" src="http://lorempixel.com/100/100/people/3" />
+                                        <span class="username">Tory Reeds</span>
+                                    </div>
+                                    <div class="status online"></div>
+                                </li>
+                                <li>
+                                    <div class="user-info">
+                                        <img class="avatar" alt="Alice Drake avatar" src="http://lorempixel.com/100/100/people/6" />
+                                        <span class="username">Alice Drake</span>
+                                    </div>
+                                    <div class="status online"></div>
+                                </li>
+                                <li>
+                                    <div class="user-info">
+                                        <img class="avatar" alt="Cooper Selvich avatar" src="http://lorempixel.com/100/100/people/4" />
+                                        <span class="username">Cooper Selvich</span>
+                                    </div>
+                                    <div class="status online"></div>
+                                </li>
+                                <li>
+                                    <div class="user-info">
+                                        <img class="avatar" alt="Irene Peeks avatar" src="http://lorempixel.com/100/100/people/9" />
+                                        <span class="username">Irene Peeks</span>
+                                    </div>
+                                    <div class="status offline"></div>
+                                </li>
+                                <li>
+                                    <div class="user-info">
+                                        <img class="avatar" alt="Leo Carl avatar" src="http://lorempixel.com/100/100/people/5" />
+                                        <span class="username">Leo Carl</span>
+                                    </div>
+                                    <div class="status offline"></div>
+                                </li>
+                                <li>
+                                    <div class="user-info">
+                                        <img class="avatar" alt="Owen Smith avatar" src="http://lorempixel.com/100/100/people/7" />
+                                        <span class="username">Owen Smith</span>
+                                    </div>
+                                    <div class="status offline"></div>
+                                </li>
+                            </ul>
+                    </section>
+
+                <!--<article class="container3">
+                        <h2 id="aboutMe">Something about me</h2>
+                        <p>
+                            <input type="image" src="http://lorempixel.com/200/200/people/" alt="picture of person"> <strong>Kikulik Tran</strong></input>
+                        </p>
+                        <p>
+                        Muffin lemon drops sweet marzipan. Tart chocolate cake cake sweet. Ice cream muffin liquorice bonbon. 
+                        Pie liquorice oat cake carrot cake oat cake bear claw. Sweet toffee dragée dragée jelly marzipan tootsie roll. 
+                        Caramels sweet topping soufflé macaroon brownie.
+                        </p>    
+                </article>    -->  
+                          
+            </main>
+            <footer>
+                <div>&copy; 2019 by Kikulik in <a href="http://accenture.sk">Accenture</a></div>
+            </footer>
+       
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     </body>
-    </html>
+</html>
